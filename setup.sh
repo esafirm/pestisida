@@ -6,7 +6,7 @@ LIST_OF_MODULES=(
 )
 
 for mod in ${LIST_OF_MODULES[@]}; do
-    echo "include '$mod'" >> settings.gradle
+    echo "include ':$mod'" >> settings.gradle
 done
 
 cat settings.gradle
